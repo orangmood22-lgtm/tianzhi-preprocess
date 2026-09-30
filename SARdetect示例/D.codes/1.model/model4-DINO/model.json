@@ -1,0 +1,20 @@
+{
+  "model_id": "model-4",
+  "directory": "D.codes/1.model/model4-DINO",
+  "role": "detector",
+  "config": "D.codes/1.model/model4-DINO/config.json",
+  "checkpoint": "B.models/model-4/SIVED_OBB_stage15_s3929.pth",
+  "sha256": "f350af7f99715631620aff05968f6365343851294f1add3b7fd60c0e1904f2b6",
+  "dataset": "SIVED_OBB",
+  "architecture": "dino_4scale_r50",
+  "train_backend": "D.codes/1.model/model4-DINO/openmmlab_backend.py",
+  "test_backend": "D.codes/1.model/model4-DINO/openmmlab_backend.py",
+  "box_type": "OBB",
+  "obb": {
+    "checkpoint": "B.models/model-4/SIVED_OBB_geometry_stage15_s3929.pth",
+    "sha256": "e63fcb90014aa1ec7fa42c84db460846f25b9d2edf8c3338a6c750cff663bca1",
+    "architecture": "EfficientNet-B0 six-value OBB regression",
+    "best_epoch": 12
+  },
+  "pipeline": "HBB detector followed by learned SIVED OBB regression"
+}

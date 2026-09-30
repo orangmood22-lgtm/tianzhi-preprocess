@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.venv-*/
+*.egg-info/
+
+# Data, trained weights, generated caches and experiment output stay local.
+SARdetect示例/A.dataset/*
+!SARdetect示例/A.dataset/.gitkeep
+SARdetect示例/B.models/*
+!SARdetect示例/B.models/.gitkeep
+SARdetect示例/C.results/
+SARdetect示例/.cache/
+SARdetect示例/.runtime/
+
+# Local environments and editor state.
+.env
+.env.*
+.vscode/
+.idea/
+
+# Supplied sample image/annotation are not needed for source distribution.
+训练图片示例.png
+源数据标注可能形式示例.txt

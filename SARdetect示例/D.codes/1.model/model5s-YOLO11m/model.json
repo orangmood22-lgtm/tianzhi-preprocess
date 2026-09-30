@@ -1,0 +1,12 @@
+{
+  "model_id": "model-5-s",
+  "directory": "D.codes/1.model/model5s-YOLO11m",
+  "role": "detector",
+  "config": "D.codes/1.model/model5s-YOLO11m/config.json",
+  "checkpoint": "B.models/model-5-s/SIVED_ATR_v3_stage14_best.pt",
+  "sha256": "d5c2db91acd886b905d51b09581c6befb6230eebcf88d8e24a2e381fd2df3779",
+  "dataset": "SIVED_ATR_synthetic_v3",
+  "architecture": "yolo11m",
+  "train_backend": "D.codes/1.model/model5s-YOLO11m/yolo_training.py",
+  "test_backend": "D.codes/1.model/model5s-YOLO11m/yolo_backend.py"
+}

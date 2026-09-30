@@ -1,0 +1,12 @@
+{
+  "model_id": "model-3-s",
+  "directory": "D.codes/1.model/model3s-RT-DETRv2",
+  "role": "detector",
+  "config": "D.codes/1.model/model3s-RT-DETRv2/config.json",
+  "checkpoint": "B.models/model-3-s/SIVED_ATR_v3_stage14_best.pth",
+  "sha256": "9a2aa23ea5d8489243d0ef38a7a1f093646eb0bbb1c3f59cf84491f5699e4910",
+  "dataset": "SIVED_ATR_synthetic_v3",
+  "architecture": "rtdetrv2_r34",
+  "train_backend": "D.codes/1.model/model3s-RT-DETRv2/rtdetr_backend.py",
+  "test_backend": "D.codes/1.model/model3s-RT-DETRv2/rtdetr_backend.py"
+}

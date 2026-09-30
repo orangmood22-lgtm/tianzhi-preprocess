@@ -1,0 +1,17 @@
+{
+  "model_id": "model-c",
+  "checkpoint": "B.models/model-c/ATRNet_rescnn256-1ch-hbb128-c2p00_E08.pth",
+  "sha256": "2a21c4b32491a2eb5cd525a7095d21daf06cbf06aecf1b4d07de6a7eef642aa5",
+  "architecture": "rescnn256",
+  "dataset": "SIVED_ATR_synthetic_v3",
+  "train": {
+    "epochs": 12,
+    "batch_size": 32,
+    "learning_rate": 0.0001
+  },
+  "depth_prior": [
+    0.1,
+    0.3,
+    0.6
+  ]
+}

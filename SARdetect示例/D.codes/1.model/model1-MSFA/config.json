@@ -1,0 +1,89 @@
+{
+  "run": {
+    "id": "fit",
+    "output_root": "C.results/1.train"
+  },
+  "references": {
+    "sardet_100k": "/workspace/SARdetect/D.codes/1.model/model1-MSFA"
+  },
+  "data": {
+    "root": "A.dataset/SIVED_OBB",
+    "train_annotations": "train.json",
+    "val_annotations": "val.json",
+    "test_annotations": "test.json",
+    "image_prefix": "images/",
+    "classes": [
+      "vehicle"
+    ],
+    "flip_probability": 0.5
+  },
+  "model": {
+    "architecture": "faster_rcnn",
+    "input_size": [
+      800,
+      800
+    ],
+    "feature_mode": "wavelet",
+    "fpn_channels": 256,
+    "anchor_scales": [
+      8
+    ],
+    "anchor_ratios": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "drop_path_rate": 0.4,
+    "roi_bbox_loss_type": "L1Loss",
+    "score_threshold": 0.001,
+    "nms_iou_threshold": 0.8,
+    "max_detections": 300,
+    "pretrained_detector": "/workspace/SARdetect/B.models/model-1/SIVED_OBB_stage15_s3929.pth"
+  },
+  "train": {
+    "epochs": 6,
+    "val_interval": 1,
+    "batch_size": 2,
+    "val_batch_size": 1,
+    "test_batch_size": 1,
+    "workers": 4,
+    "learning_rate": 3e-05,
+    "weight_decay": 0.05,
+    "warmup_iters": 100,
+    "milestones": [
+      4,
+      5
+    ],
+    "clip_grad_norm": 1.0,
+    "accumulative_counts": 1,
+    "amp": false,
+    "log_interval": 50,
+    "checkpoint_interval": 1,
+    "max_keep_checkpoints": 2
+  },
+  "runtime": {
+    "seed": 3925,
+    "deterministic": false,
+    "distributed_backend": "hccl",
+    "world_size": 1,
+    "physical_devices": "0"
+  },
+  "model_id": "model-1",
+  "config_id": "config-00",
+  "backend": "faster",
+  "name": "Faster R-CNN MSFA ConvNeXt-S D47",
+  "input_size": [
+    800,
+    800
+  ],
+  "deployment_variant": "d47-native800",
+  "obb": {
+    "checkpoint": "B.models/model-1/SIVED_OBB_geometry_stage15_s3929.pth",
+    "sha256": "3f5b5e86fd2a54d05ce8f9b3cf8d25dbbd7765d481853f072be502d9eba8dfb9",
+    "architecture": "EfficientNet-B0 six-value OBB regression",
+    "best_epoch": 11,
+    "epochs": 12,
+    "batch_size": 64,
+    "learning_rate": 0.0001
+  }
+}

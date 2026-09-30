@@ -1,0 +1,17 @@
+{
+  "model_id": "model-d",
+  "checkpoint": "B.models/model-d/SIVED_model-d_E09_20260910.pth",
+  "sha256": "877a3bb3950031ceed8362db67ba4f7515e7de9d4d8a5c7bd71e769edde5d2e3",
+  "architecture": "residual_hbb",
+  "dataset": "SIVED",
+  "train": {
+    "epochs": 12,
+    "batch_size": 32,
+    "learning_rate": 0.0001
+  },
+  "depth_prior": [
+    0.1,
+    0.3,
+    0.6
+  ]
+}

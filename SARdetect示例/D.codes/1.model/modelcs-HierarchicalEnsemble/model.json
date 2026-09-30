@@ -1,0 +1,11 @@
+{
+  "directory": "D.codes/1.model/modelcs-HierarchicalEnsemble",
+  "role": "classifier",
+  "config": "D.codes/1.model/modelcs-HierarchicalEnsemble/config.json",
+  "checkpoint": "B.models/model-c-s/phase19/ensemble.json",
+  "sha256": "f197a6ed0c183dd209c6f7abed950e7454633f8f41cddf19a56fce7fedbad83a",
+  "architecture": "phase19_five_networks_knn",
+  "dataset": "SIVED_ATR_synthetic_v3",
+  "implementation": "D.codes/1.model/modelcs-HierarchicalEnsemble/ensemble.py",
+  "train_backend": "D.codes/1.model/modelcs-HierarchicalEnsemble/train_classifier.py"
+}

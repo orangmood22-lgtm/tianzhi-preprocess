@@ -1,0 +1,478 @@
+{
+  "level1": [
+    "Bus",
+    "Car",
+    "Speacial",
+    "Truck"
+  ],
+  "level2": [
+    {
+      "level1": "Bus",
+      "name": "Large_Bus",
+      "parent": 0
+    },
+    {
+      "level1": "Bus",
+      "name": "Medium_Bus",
+      "parent": 0
+    },
+    {
+      "level1": "Bus",
+      "name": "Small_Bus",
+      "parent": 0
+    },
+    {
+      "level1": "Car",
+      "name": "Compact_SUV",
+      "parent": 1
+    },
+    {
+      "level1": "Car",
+      "name": "Large_Car",
+      "parent": 1
+    },
+    {
+      "level1": "Car",
+      "name": "Medium_Car",
+      "parent": 1
+    },
+    {
+      "level1": "Car",
+      "name": "Medium_SUV",
+      "parent": 1
+    },
+    {
+      "level1": "Car",
+      "name": "Mini_Car",
+      "parent": 1
+    },
+    {
+      "level1": "Speacial",
+      "name": "Ambulance",
+      "parent": 2
+    },
+    {
+      "level1": "Speacial",
+      "name": "ECV",
+      "parent": 2
+    },
+    {
+      "level1": "Speacial",
+      "name": "Road_Roller",
+      "parent": 2
+    },
+    {
+      "level1": "Speacial",
+      "name": "Shovel_Loader",
+      "parent": 2
+    },
+    {
+      "level1": "Truck",
+      "name": "Forklift",
+      "parent": 3
+    },
+    {
+      "level1": "Truck",
+      "name": "Heavy_DT",
+      "parent": 3
+    },
+    {
+      "level1": "Truck",
+      "name": "Heavy_FT",
+      "parent": 3
+    },
+    {
+      "level1": "Truck",
+      "name": "Heavy_ST",
+      "parent": 3
+    },
+    {
+      "level1": "Truck",
+      "name": "Light_DT",
+      "parent": 3
+    },
+    {
+      "level1": "Truck",
+      "name": "Light_PV",
+      "parent": 3
+    },
+    {
+      "level1": "Truck",
+      "name": "Medium_TT",
+      "parent": 3
+    },
+    {
+      "level1": "Truck",
+      "name": "Mixer_Truck",
+      "parent": 3
+    },
+    {
+      "level1": "Truck",
+      "name": "Pickup",
+      "parent": 3
+    }
+  ],
+  "leaves": [
+    {
+      "id": 0,
+      "l1": 1,
+      "l2": 5,
+      "l3": 0,
+      "level1": "Car",
+      "level2": "Medium_Car",
+      "level3": "Buick_Excelle_GT"
+    },
+    {
+      "id": 1,
+      "l1": 0,
+      "l2": 2,
+      "l3": 1,
+      "level1": "Bus",
+      "level2": "Small_Bus",
+      "level3": "Buick_GL8"
+    },
+    {
+      "id": 2,
+      "l1": 3,
+      "l2": 19,
+      "l3": 2,
+      "level1": "Truck",
+      "level2": "Mixer_Truck",
+      "level3": "CNHTC_HOWO"
+    },
+    {
+      "id": 3,
+      "l1": 1,
+      "l2": 6,
+      "l3": 3,
+      "level1": "Car",
+      "level2": "Medium_SUV",
+      "level3": "Chang'an_CS75_Plus"
+    },
+    {
+      "id": 4,
+      "l1": 0,
+      "l2": 2,
+      "l3": 4,
+      "level1": "Bus",
+      "level2": "Small_Bus",
+      "level3": "Chang'an_Starlight_4500"
+    },
+    {
+      "id": 5,
+      "l1": 1,
+      "l2": 6,
+      "l3": 5,
+      "level1": "Car",
+      "level2": "Medium_SUV",
+      "level3": "Changfeng_Cheetah_CFA6473C"
+    },
+    {
+      "id": 6,
+      "l1": 2,
+      "l2": 10,
+      "l3": 6,
+      "level1": "Speacial",
+      "level2": "Road_Roller",
+      "level3": "Changlin_8228-5"
+    },
+    {
+      "id": 7,
+      "l1": 1,
+      "l2": 5,
+      "l3": 7,
+      "level1": "Car",
+      "level2": "Medium_Car",
+      "level3": "Chery_Arrizo 5"
+    },
+    {
+      "id": 8,
+      "l1": 1,
+      "l2": 7,
+      "l3": 8,
+      "level1": "Car",
+      "level2": "Mini_Car",
+      "level3": "Chery_qq3"
+    },
+    {
+      "id": 9,
+      "l1": 1,
+      "l2": 6,
+      "l3": 9,
+      "level1": "Car",
+      "level2": "Medium_SUV",
+      "level3": "Chevrolet_Blazer_1998"
+    },
+    {
+      "id": 10,
+      "l1": 3,
+      "l2": 18,
+      "l3": 10,
+      "level1": "Truck",
+      "level2": "Medium_TT",
+      "level3": "Dongfeng_Duolika"
+    },
+    {
+      "id": 11,
+      "l1": 0,
+      "l2": 1,
+      "l3": 11,
+      "level1": "Bus",
+      "level2": "Medium_Bus",
+      "level3": "Dongfeng_EQ6608LTV"
+    },
+    {
+      "id": 12,
+      "l1": 0,
+      "l2": 2,
+      "l3": 12,
+      "level1": "Bus",
+      "level2": "Small_Bus",
+      "level3": "Dongfeng_Forthing_Lingzhi"
+    },
+    {
+      "id": 13,
+      "l1": 3,
+      "l2": 13,
+      "l3": 13,
+      "level1": "Truck",
+      "level2": "Heavy_DT",
+      "level3": "Dongfeng_Tianjin_DFH2200B"
+    },
+    {
+      "id": 14,
+      "l1": 3,
+      "l2": 15,
+      "l3": 14,
+      "level1": "Truck",
+      "level2": "Heavy_ST",
+      "level3": "Dongfeng_Tianjin_KR230"
+    },
+    {
+      "id": 15,
+      "l1": 3,
+      "l2": 14,
+      "l3": 15,
+      "level1": "Truck",
+      "level2": "Heavy_FT",
+      "level3": "FAW_J6P"
+    },
+    {
+      "id": 16,
+      "l1": 3,
+      "l2": 16,
+      "l3": 16,
+      "level1": "Truck",
+      "level2": "Light_DT",
+      "level3": "FAW_Jiabao_T51"
+    },
+    {
+      "id": 17,
+      "l1": 3,
+      "l2": 16,
+      "l3": 17,
+      "level1": "Truck",
+      "level2": "Light_DT",
+      "level3": "Foton_BJ1045V9JB5-54"
+    },
+    {
+      "id": 18,
+      "l1": 1,
+      "l2": 4,
+      "l3": 18,
+      "level1": "Car",
+      "level2": "Large_Car",
+      "level3": "Great_Wall_Voleex_C50"
+    },
+    {
+      "id": 19,
+      "l1": 3,
+      "l2": 20,
+      "l3": 19,
+      "level1": "Truck",
+      "level2": "Pickup",
+      "level3": "Great_Wall_poer"
+    },
+    {
+      "id": 20,
+      "l1": 1,
+      "l2": 7,
+      "l3": 20,
+      "level1": "Car",
+      "level2": "Mini_Car",
+      "level3": "Hawtai_EV160B"
+    },
+    {
+      "id": 21,
+      "l1": 1,
+      "l2": 4,
+      "l3": 21,
+      "level1": "Car",
+      "level2": "Large_Car",
+      "level3": "Hongqi_CA7180A3E"
+    },
+    {
+      "id": 22,
+      "l1": 1,
+      "l2": 4,
+      "l3": 22,
+      "level1": "Car",
+      "level2": "Large_Car",
+      "level3": "Hongqi_h5"
+    },
+    {
+      "id": 23,
+      "l1": 3,
+      "l2": 20,
+      "l3": 23,
+      "level1": "Truck",
+      "level2": "Pickup",
+      "level3": "Huanghai_N1"
+    },
+    {
+      "id": 24,
+      "l1": 3,
+      "l2": 12,
+      "l3": 24,
+      "level1": "Truck",
+      "level2": "Forklift",
+      "level3": "Hyundai_HLF25_II"
+    },
+    {
+      "id": 25,
+      "l1": 3,
+      "l2": 17,
+      "l3": 25,
+      "level1": "Truck",
+      "level2": "Light_PV",
+      "level3": "JAC_Junling"
+    },
+    {
+      "id": 26,
+      "l1": 2,
+      "l2": 8,
+      "l3": 26,
+      "level1": "Speacial",
+      "level2": "Ambulance",
+      "level3": "JINBEI_SY5033XJH"
+    },
+    {
+      "id": 27,
+      "l1": 1,
+      "l2": 3,
+      "l3": 27,
+      "level1": "Car",
+      "level2": "Compact_SUV",
+      "level3": "Jeep_Patriot"
+    },
+    {
+      "id": 28,
+      "l1": 1,
+      "l2": 3,
+      "l3": 28,
+      "level1": "Car",
+      "level2": "Compact_SUV",
+      "level3": "Lincoln_MKC"
+    },
+    {
+      "id": 29,
+      "l1": 2,
+      "l2": 9,
+      "l3": 29,
+      "level1": "Speacial",
+      "level2": "ECV",
+      "level3": "Lveco_Proud_2009"
+    },
+    {
+      "id": 30,
+      "l1": 0,
+      "l2": 1,
+      "l3": 30,
+      "level1": "Bus",
+      "level2": "Medium_Bus",
+      "level3": "MAXUS_V80"
+    },
+    {
+      "id": 31,
+      "l1": 1,
+      "l2": 3,
+      "l3": 31,
+      "level1": "Car",
+      "level2": "Compact_SUV",
+      "level3": "Mitsubishi_Outlander_2003"
+    },
+    {
+      "id": 32,
+      "l1": 2,
+      "l2": 11,
+      "l3": 32,
+      "level1": "Speacial",
+      "level2": "Shovel_Loader",
+      "level3": "SDLG_ZL40F"
+    },
+    {
+      "id": 33,
+      "l1": 3,
+      "l2": 14,
+      "l3": 33,
+      "level1": "Truck",
+      "level2": "Heavy_FT",
+      "level3": "SHACMAN_DeLong_M3000"
+    },
+    {
+      "id": 34,
+      "l1": 3,
+      "l2": 15,
+      "l3": 34,
+      "level1": "Truck",
+      "level2": "Heavy_ST",
+      "level3": "SHACMAN_DeLong_X3000"
+    },
+    {
+      "id": 35,
+      "l1": 3,
+      "l2": 16,
+      "l3": 35,
+      "level1": "Truck",
+      "level2": "Light_DT",
+      "level3": "WAW_Aochi_1800"
+    },
+    {
+      "id": 36,
+      "l1": 3,
+      "l2": 18,
+      "l3": 36,
+      "level1": "Truck",
+      "level2": "Medium_TT",
+      "level3": "WAW_Aochi_Hongrui"
+    },
+    {
+      "id": 37,
+      "l1": 0,
+      "l2": 2,
+      "l3": 37,
+      "level1": "Bus",
+      "level2": "Small_Bus",
+      "level3": "Wuling_Rongguang_V"
+    },
+    {
+      "id": 38,
+      "l1": 0,
+      "l2": 1,
+      "l3": 38,
+      "level1": "Bus",
+      "level2": "Medium_Bus",
+      "level3": "Yangzi_YZK6590XCA"
+    },
+    {
+      "id": 39,
+      "l1": 0,
+      "l2": 0,
+      "l3": 39,
+      "level1": "Bus",
+      "level2": "Large_Bus",
+      "level3": "Yutong_ZK6120HY1"
+    }
+  ],
+  "source": "ATRNet native XML class/subclass/type; proxy hierarchy, not official competition 26 classes"
+}

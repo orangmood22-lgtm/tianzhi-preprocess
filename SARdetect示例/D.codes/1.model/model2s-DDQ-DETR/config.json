@@ -1,0 +1,72 @@
+{
+  "model_id": "model-2-s",
+  "config_id": "config-00",
+  "name": "DDQ-DETR synthetic-v3",
+  "backend": "openmmlab",
+  "input_size": [
+    1024,
+    1024
+  ],
+  "run": {
+    "id": "fit",
+    "output_root": "C.results/1.train"
+  },
+  "references": {
+    "mmdetection": "/workspace/SARdetect/D.codes/1.model/model2s-DDQ-DETR"
+  },
+  "data": {
+    "root": "/workspace/SARdetect/A.dataset/SIVED_ATR_synthetic_v3/annotations",
+    "train_annotations": "train.json",
+    "val_annotations": "val.json",
+    "test_annotations": "test.json",
+    "image_prefix": "/workspace/SARdetect/A.dataset/SIVED_ATR_synthetic_v3/images/",
+    "classes": [
+      "vehicle"
+    ],
+    "flip_probability": 0.5,
+    "vertical_flip_probability": 0.15,
+    "multiscale_sizes": []
+  },
+  "model": {
+    "architecture": "ddq_detr_4scale_r50",
+    "input_size": [
+      1024,
+      1024
+    ],
+    "score_threshold": 0.001,
+    "nms_iou_threshold": 0.8,
+    "max_detections": 300,
+    "pretrained_detector": "/workspace/SARdetect/B.models/model-2-s/SIVED_ATR_v3_stage14_best.pth"
+  },
+  "train": {
+    "epochs": 6,
+    "val_interval": 1,
+    "batch_size": 2,
+    "val_batch_size": 1,
+    "test_batch_size": 1,
+    "workers": 4,
+    "learning_rate": 3e-05,
+    "backbone_lr_multiplier": 0.1,
+    "weight_decay": 0.05,
+    "warmup_iters": 100,
+    "milestones": [
+      4,
+      5
+    ],
+    "clip_grad_norm": 0.1,
+    "accumulative_counts": 1,
+    "amp": false,
+    "log_interval": 50,
+    "checkpoint_interval": 1,
+    "max_keep_checkpoints": 2,
+    "per_device_batch": 2
+  },
+  "runtime": {
+    "seed": 3922,
+    "deterministic": false,
+    "distributed_backend": "hccl",
+    "world_size": 1,
+    "physical_devices": "0"
+  },
+  "base_model_id": "model-2"
+}

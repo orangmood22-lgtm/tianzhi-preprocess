@@ -1,0 +1,12 @@
+{
+  "model_id": "model-1-s",
+  "directory": "D.codes/1.model/model1s-MSFA",
+  "role": "detector",
+  "config": "D.codes/1.model/model1s-MSFA/config.json",
+  "checkpoint": "B.models/model-1-s/SIVED_ATR_v3_stage14_best.pth",
+  "sha256": "027246c9efd854db977cab1f4ddd027334169be082f9f4ec360e3a2b4198ccc2",
+  "dataset": "SIVED_ATR_synthetic_v3",
+  "architecture": "faster_rcnn",
+  "train_backend": "D.codes/1.model/model1s-MSFA/faster_backend.py",
+  "test_backend": "D.codes/1.model/model1s-MSFA/faster_evaluate.py"
+}

@@ -1,0 +1,11 @@
+{
+  "model_id": "model-c",
+  "directory": "D.codes/1.model/modelc-ResCNN",
+  "role": "classifier",
+  "config": "D.codes/1.model/modelc-ResCNN/config.json",
+  "checkpoint": "B.models/model-c/ATRNet_rescnn256-1ch-hbb128-c2p00_E08.pth",
+  "sha256": "2a21c4b32491a2eb5cd525a7095d21daf06cbf06aecf1b4d07de6a7eef642aa5",
+  "architecture": "rescnn256",
+  "dataset": "SIVED_ATR_synthetic_v3",
+  "implementation": "D.codes/1.model/modelc-ResCNN/rescnn.py"
+}

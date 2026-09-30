@@ -1,0 +1,20 @@
+{
+  "model_id": "model-5",
+  "directory": "D.codes/1.model/model5-YOLOv8m",
+  "role": "detector",
+  "config": "D.codes/1.model/model5-YOLOv8m/config.json",
+  "checkpoint": "B.models/model-5/SIVED_OBB_stage15_s3929.pt",
+  "sha256": "086396baa8f227b8276e52cfc8a93b2e16f8e3e99f1322520c4dcea0753fadff",
+  "dataset": "SIVED_OBB",
+  "architecture": "yolov8m",
+  "train_backend": "D.codes/1.model/model5-YOLOv8m/sived_yolo_train.py",
+  "test_backend": "D.codes/1.model/model5-YOLOv8m/yolo_backend.py",
+  "box_type": "OBB",
+  "obb": {
+    "checkpoint": "B.models/model-5/SIVED_OBB_geometry_stage15_s3929.pth",
+    "sha256": "fe93426fb0859bb69787a3d801d040115d307aa38f7fd4c24028fe7b1f8cefc8",
+    "architecture": "EfficientNet-B0 six-value OBB regression",
+    "best_epoch": 12
+  },
+  "pipeline": "HBB detector followed by learned SIVED OBB regression"
+}

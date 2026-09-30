@@ -1,0 +1,20 @@
+{
+  "model_id": "model-1",
+  "directory": "D.codes/1.model/model1-MSFA",
+  "role": "detector",
+  "config": "D.codes/1.model/model1-MSFA/config.json",
+  "checkpoint": "B.models/model-1/SIVED_OBB_stage15_s3929.pth",
+  "sha256": "5d0bd80cb64611b855f39c82cf359b3e6bd7267371ba484486ff4c45a1840a8b",
+  "dataset": "SIVED_OBB",
+  "architecture": "faster_rcnn",
+  "train_backend": "D.codes/1.model/model1-MSFA/faster_backend.py",
+  "test_backend": "D.codes/1.model/model1-MSFA/faster_evaluate.py",
+  "box_type": "OBB",
+  "obb": {
+    "checkpoint": "B.models/model-1/SIVED_OBB_geometry_stage15_s3929.pth",
+    "sha256": "3f5b5e86fd2a54d05ce8f9b3cf8d25dbbd7765d481853f072be502d9eba8dfb9",
+    "architecture": "EfficientNet-B0 six-value OBB regression",
+    "best_epoch": 11
+  },
+  "pipeline": "HBB detector followed by learned SIVED OBB regression"
+}

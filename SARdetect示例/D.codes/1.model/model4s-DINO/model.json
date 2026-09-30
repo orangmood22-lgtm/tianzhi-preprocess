@@ -1,0 +1,12 @@
+{
+  "model_id": "model-4-s",
+  "directory": "D.codes/1.model/model4s-DINO",
+  "role": "detector",
+  "config": "D.codes/1.model/model4s-DINO/config.json",
+  "checkpoint": "B.models/model-4-s/SIVED_ATR_v3_stage14_best.pth",
+  "sha256": "751c73a9ebd52a152a88df8b76b9d2af87ec0fcee61302f4add32f770f7cfda0",
+  "dataset": "SIVED_ATR_synthetic_v3",
+  "architecture": "dino_4scale_r50",
+  "train_backend": "D.codes/1.model/model4s-DINO/openmmlab_backend.py",
+  "test_backend": "D.codes/1.model/model4s-DINO/openmmlab_backend.py"
+}

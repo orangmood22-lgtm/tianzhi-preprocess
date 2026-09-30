@@ -1,0 +1,11 @@
+{
+  "directory": "D.codes/1.model/modelds-OBBRefiner",
+  "role": "refiner",
+  "config": "D.codes/1.model/modelds-OBBRefiner/config.json",
+  "checkpoint": "B.models/model-d-s/SIVED_ATR_v3_effb0_obb_stage14.pth",
+  "sha256": "a770da8e9e741d71cb5cc0b4718b37a8d6d391f7be4e410650eba655004133bd",
+  "architecture": "efficientnet_b0_obb",
+  "dataset": "SIVED_ATR_synthetic_v3",
+  "implementation": "D.codes/1.model/modelds-OBBRefiner/obb_model.py",
+  "train_backend": "D.codes/1.model/modelds-OBBRefiner/train_refiner.py"
+}

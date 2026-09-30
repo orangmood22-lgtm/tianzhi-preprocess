@@ -1,0 +1,20 @@
+{
+  "model_id": "model-3",
+  "directory": "D.codes/1.model/model3-RT-DETRv2",
+  "role": "detector",
+  "config": "D.codes/1.model/model3-RT-DETRv2/config.json",
+  "checkpoint": "B.models/model-3/SIVED_OBB_stage15_s3929.pth",
+  "sha256": "7acba20070e8caa8794093c87fdda233aa3d6fca21e0411536647fbd9887975a",
+  "dataset": "SIVED_OBB",
+  "architecture": "rtdetrv2_r34",
+  "train_backend": "D.codes/1.model/model3-RT-DETRv2/rtdetr_backend.py",
+  "test_backend": "D.codes/1.model/model3-RT-DETRv2/rtdetr_backend.py",
+  "box_type": "OBB",
+  "obb": {
+    "checkpoint": "B.models/model-3/SIVED_OBB_geometry_stage15_s3929.pth",
+    "sha256": "99031700ad244c80e759d38010ada0f2cd3982261d264294d467594f5f7dc7de",
+    "architecture": "EfficientNet-B0 six-value OBB regression",
+    "best_epoch": 11
+  },
+  "pipeline": "HBB detector followed by learned SIVED OBB regression"
+}

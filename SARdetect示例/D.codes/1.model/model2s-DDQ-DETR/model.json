@@ -1,0 +1,12 @@
+{
+  "model_id": "model-2-s",
+  "directory": "D.codes/1.model/model2s-DDQ-DETR",
+  "role": "detector",
+  "config": "D.codes/1.model/model2s-DDQ-DETR/config.json",
+  "checkpoint": "B.models/model-2-s/SIVED_ATR_v3_stage14_best.pth",
+  "sha256": "bbf4a78eeaeba09ecff590aef0506df4ffc41fa6f4e752485a60e1c2aba85747",
+  "dataset": "SIVED_ATR_synthetic_v3",
+  "architecture": "ddq_detr_4scale_r50",
+  "train_backend": "D.codes/1.model/model2s-DDQ-DETR/openmmlab_backend.py",
+  "test_backend": "D.codes/1.model/model2s-DDQ-DETR/openmmlab_backend.py"
+}

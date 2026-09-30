@@ -1,0 +1,11 @@
+{
+  "model_id": "model-d",
+  "directory": "D.codes/1.model/modeld-ResidualRefiner",
+  "role": "refiner",
+  "config": "D.codes/1.model/modeld-ResidualRefiner/config.json",
+  "checkpoint": "B.models/model-d/SIVED_model-d_E09_20260910.pth",
+  "sha256": "877a3bb3950031ceed8362db67ba4f7515e7de9d4d8a5c7bd71e769edde5d2e3",
+  "architecture": "residual_hbb",
+  "dataset": "SIVED",
+  "implementation": "D.codes/1.model/modeld-ResidualRefiner/residual_refiner.py"
+}

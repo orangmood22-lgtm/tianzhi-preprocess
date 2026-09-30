@@ -1,0 +1,17 @@
+{
+  "model_id": "model-c-s",
+  "checkpoint": "B.models/model-c-s/phase19/ensemble.json",
+  "sha256": "f197a6ed0c183dd209c6f7abed950e7454633f8f41cddf19a56fce7fedbad83a",
+  "architecture": "phase19_five_networks_knn",
+  "dataset": "SIVED_ATR_synthetic_v3",
+  "train": {
+    "epochs": 12,
+    "batch_size": 16,
+    "learning_rate": 3e-05
+  },
+  "depth_prior": [
+    0.1,
+    0.3,
+    0.6
+  ]
+}
